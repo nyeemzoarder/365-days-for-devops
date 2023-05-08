@@ -1,0 +1,15 @@
+#!/bin/bash
+# Purpose - Script to backup of a defined folder
+# Author - Pritam Kumar Dey
+# ------------------------------------------------------------------
+
+#tar = Tape Archive tool for compression
+tar -cvf /root/backup/backup.tar /root/scripts
+
+#Go to the backup folder location
+cd /root/backup
+
+#Show the size of the folder
+du -sh
+
+
