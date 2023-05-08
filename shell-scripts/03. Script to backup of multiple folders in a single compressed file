@@ -1,0 +1,19 @@
+#!/bin/bash
+# Purpose - Script to backup of multiple folders in a single compressed file
+# Author - Pritam Kumar Dey
+# -----------------------------------------------------------------------------
+
+#Specify folders whose backup is to be taken in variables
+f1="/root/test"
+f2="/root/scripts"
+
+
+#tar = Tape Archive tool for compression
+#Creating same backup tar file for all specified folders
+tar -cvf /root/backup/backup.tar $f1 $f2 
+
+#Go to the backup folder location
+cd /root/backup
+
+#Show the size of the folder
+du -sh
