@@ -1,0 +1,28 @@
+#!/bin/bash
+# Purpose - Script to backup with timestamp
+# Author - Pritam Kumar Dey
+# -----------------------------------------------------------------------------
+
+#Specify folders whose backup is to be taken in variables
+
+src_dir="/root/scripts"
+target_dir="/root/backup"
+
+#get current time
+current_timestamp="backup_`date +%d`-`date +%m`-`date +%Y`-`date +%H`-`date +%M`-`date +%S`"
+
+
+#give the name of the compressed file
+backup_file=$target_dir/$current_timestamp.tgz
+
+#tar = Tape Archive tool for compression
+tar -cvf $backup_file --absolute-names $src_dir
+
+echo "Backup Completed"
+
+#Go to the backup folder location
+cd /root/backup
+
+#Show the size of the folder
+du -sh
+
