@@ -1,0 +1,19 @@
+#!/bin/bash
+# Purpose - Basic Script
+# Author - Pritam Kumar Dey
+# ------------------------------------------------------------------
+
+echo
+echo "This script will run a few basic tasks ..."
+echo
+pwd 
+echo
+ls
+echo
+whoami
+echo
+cal
+echo
+touch a b c
+
+echo "Script Ends ..."
