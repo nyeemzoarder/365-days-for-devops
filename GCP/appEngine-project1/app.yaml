@@ -1,5 +1,5 @@
 runtime: python27
-service: my-app-service
+service: my-demo-service
 api_version: 1
 threadsafe: true
 
